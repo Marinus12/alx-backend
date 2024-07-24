@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A class LIFOCache that inherits from BaseCaching and is a cahing system"""
+"""A class LIFOCache that inherits from BaseCaching and is a caching system"""
 from base_caching import BaseCaching
 
 
@@ -14,7 +14,7 @@ class LIFOCache(BaseCaching):
     def put(self, key, item):
         """Add an item to the cache.
 
-        If the cache exceeds its limit, disard thr last item added (LIFO)
+        If the cache exceeds its limit, disard the last item added (LIFO)
 
         Args:
             key: The key of the item to add.
@@ -41,4 +41,4 @@ class LIFOCache(BaseCaching):
         Returns:
             The value of the item if it exists, None otherwise.
         """
-        return self.cahe_data.get(key)
+        return self.cache_data.get(key)
